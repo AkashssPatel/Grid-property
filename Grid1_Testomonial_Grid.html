@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+            body{margin: 100px;}
+            .container{
+            display: grid;
+            background-color:purple;
+            border: solid black;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: auto;
+            grid-gap:10px;
+            grid-template-areas:"first first second fifth"
+            "third fourth fourth fifth";
+        
+        }
+             .box1{
+                 grid-area:first;
+                 height: 100px;
+                 width: 210px;
+                 }
+
+             .box2{  
+                grid-area:second;
+                height:100px;
+                width:100px;
+            }
+
+            .box3{
+                grid-area: third;
+                height: 100px;
+                width: 100px;
+            }
+
+            .box4{
+                grid-area:fourth;
+                height: 100px;
+                width: 210px;
+            }
+
+            .box5{
+                grid-area: fifth;
+                height:210px;
+                width: 100px;
+            }
+     
+          
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <img class="box1" src="/Images/Comment5.jpg" alt="">
+        <img class="box2" src="/Images/Comment3.jpg" alt="">
+        <img class="box3" src="/Images/Comment1.png" alt="">
+        <img class="box4" src="/Images/Comment4.jpg" alt="">
+        <img class="box5" src="/Images/Comment2.jpg" alt="">
+
+    </div>
+  
+</body>
+</html>

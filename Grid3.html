@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin:50px;}
+        .container{
+            background-color: burlywood;
+            border: solid black;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: auto;
+            grid-gap:10px;
+            grid-template-areas: "third first fourth"
+            "third second fourth";
+        }
+        .first {
+            grid-area:first ;
+            height: 100px;
+            width: 100px;
+        }
+        .second{
+            grid-area:second ;
+            height: 100px;
+            width: 100px;
+        }
+        .third{
+            grid-area: third;
+            padding-top: 50px;
+            height: 100px;
+            width: 100px;
+        }
+        .fourth{
+            grid-area: fourth;
+            padding-top: 50px;
+            height: 100px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container" >
+       <img class="first" src="/Images/Comment2.jpg"  alt="">
+       <img class="second" src="/Images/Comment3.jpg" alt="">
+       <img class="third" src="/Images/Comment1.png" alt="">
+       <img class="fourth" src="/Images/Comment5.jpg" alt="">
+
+   </div> 
+</body>
+</html>
